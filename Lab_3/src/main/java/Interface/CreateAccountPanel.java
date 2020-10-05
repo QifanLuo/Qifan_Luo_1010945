@@ -167,7 +167,13 @@ public class CreateAccountPanel extends javax.swing.JPanel {
     private void createBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createBtnActionPerformed
         // TODO add your handling code here:
         
-        String routingNum = routingNumTxt.getText();
+        
+        if( routingNumTxt.getText().matches("^\\+{0,1}[1-9]\\d*")
+                &&  accountNumTxt.getText().matches("^\\+{0,1}[1-9]\\d*") 
+                && balanceTxt.getText().matches("^\\+{0,1}[1-9]\\d*")
+                && bankNameTxt.getText().matches(".*[a-zA-Z]+.*")){
+            
+                    String routingNum = routingNumTxt.getText();
         String accountNum = accountNumTxt.getText();
         String bankName = bankNameTxt.getText();
         int balance = Integer.parseInt(balanceTxt.getText());
@@ -185,6 +191,13 @@ public class CreateAccountPanel extends javax.swing.JPanel {
         bankNameTxt.setText("");
         balanceTxt.setText("");
         
+            
+        } else{
+            
+            JOptionPane.showMessageDialog(null, "Please enter right information","Warning",JOptionPane.WARNING_MESSAGE);
+        }
+    
+
         
         
     }//GEN-LAST:event_createBtnActionPerformed
