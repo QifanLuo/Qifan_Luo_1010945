@@ -560,6 +560,11 @@ public class ManageCarPanel extends javax.swing.JPanel {
     private void seatLimitSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seatLimitSearchBtnActionPerformed
         // TODO add your handling code here:
         
+        if(bottomSeatTxt.getText().isEmpty() || topSeatNum.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Please enter seat number","Warning",JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        
         int bottom = Integer.parseInt(bottomSeatTxt.getText());
         int top = Integer.parseInt(topSeatNum.getText());
         
