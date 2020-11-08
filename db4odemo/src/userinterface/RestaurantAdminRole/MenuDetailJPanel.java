@@ -178,7 +178,7 @@ public class MenuDetailJPanel extends javax.swing.JPanel {
         menuItem.setPrice(Double.parseDouble(priceTxt.getText()));
         menuItem.setAvailNum(Integer.parseInt(avalTxt.getText()));
         
-                avalTxt.setEnabled(false);
+        avalTxt.setEnabled(false);
         nameTxt.setEnabled(false);
         priceTxt.setEnabled(false);
         

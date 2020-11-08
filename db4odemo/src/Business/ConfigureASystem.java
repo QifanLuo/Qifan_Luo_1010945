@@ -1,5 +1,7 @@
 package Business;
 
+import Business.Customer.Customer;
+import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryMan;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Employee.Employee;
@@ -37,6 +39,8 @@ public class ConfigureASystem {
         system.setMasterOrderCatalog(masterOrderCatalog);
         DeliveryManDirectory deliveryManlist = new DeliveryManDirectory();
         system.setDeliveryManDirectory(deliveryManlist);
+        CustomerDirectory customerlist = new CustomerDirectory();
+        system.setCustomerDirectory(customerlist);
         
         
              
@@ -46,7 +50,8 @@ public class ConfigureASystem {
         
         Employee cus = system.getEmployeeDirectory().createEmployee("customer");
         UserAccount customer = system.getUserAccountDirectory().createUserAccount("customer", "customer", cus, new CustomerRole());
-        CustomerRole cus1 = (CustomerRole) customer.getRole();
+        //CustomerRole cus1 = (CustomerRole) customer.getRole();
+        customerlist.getCustomerList().add(new Customer(customer));
 
  
         

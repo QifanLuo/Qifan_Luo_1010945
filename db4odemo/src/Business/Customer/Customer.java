@@ -5,10 +5,27 @@
  */
 package Business.Customer;
 
+import Business.UserAccount.UserAccount;
+
 /**
  *
  * @author harold
  */
 public class Customer {
+    private UserAccount user;
+    
+    public Customer(UserAccount user){
+        this.user = user;
+    }
+
+    public UserAccount getUser() {
+        return user;
+    }
+    
+    
+    @Override
+    public String toString(){
+        return user.getEmployee().getName();
+    }
     
 }

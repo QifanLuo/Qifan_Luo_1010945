@@ -27,7 +27,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         this.business = business;
         this.userAccount = account;
         AdminRole adminRole = (AdminRole) userAccount.getRole();      
-        valueLabel.setText(adminRole.toString());
+        valueLabel.setText(adminRole.getRestaurant().getName());
     }
     
     /** This method is called from within the constructor to
