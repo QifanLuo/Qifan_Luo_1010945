@@ -201,13 +201,8 @@ public class AdminMngJPanel extends javax.swing.JPanel {
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
         // TODO add your handling code here:
-        int row = infoTable.getSelectedRow();
-        if(row<0){
-            JOptionPane.showMessageDialog(null, "Pls select a row!!", "Warning", JOptionPane.WARNING_MESSAGE);
-        }
-        Restaurant restaurant = (Restaurant)infoTable.getValueAt(row, 4);
 
-        AdminAddJPanel aajp = new AdminAddJPanel(userProcessContainer, restaurant,ecosystem);
+        AdminAddJPanel aajp = new AdminAddJPanel(userProcessContainer,ecosystem);
         userProcessContainer.add("AdminAddJPanel",aajp);
         CardLayout layout = (CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);

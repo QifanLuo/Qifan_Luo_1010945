@@ -25,7 +25,7 @@ public class AdminAddJPanel extends javax.swing.JPanel {
 
     
     JPanel userProcessContainer; 
-    Restaurant restaurant;
+    //Restaurant restaurant;
     EcoSystem system;
 
     /**
@@ -33,10 +33,10 @@ public class AdminAddJPanel extends javax.swing.JPanel {
      */
 
 
-    AdminAddJPanel(JPanel userProcessContainer, Restaurant restaurant, EcoSystem ecosystem) {
+    AdminAddJPanel(JPanel userProcessContainer, EcoSystem ecosystem) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
-        this.restaurant = restaurant;
+        //this.restaurant = restaurant;
         this.system = ecosystem;
     }
 

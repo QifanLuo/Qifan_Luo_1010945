@@ -22,7 +22,7 @@ import userinterface.DeliveryManRole.DeliveryManWorkAreaJPanel;
  */
 public class CustomerAddJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer; 
-    Customer customer;
+    //Customer customer;
     EcoSystem system;
 
     /**
@@ -30,10 +30,10 @@ public class CustomerAddJPanel extends javax.swing.JPanel {
      */
 
 
-    CustomerAddJPanel(JPanel userProcessContainer, Customer customer,EcoSystem ecosystem) {
+    CustomerAddJPanel(JPanel userProcessContainer,EcoSystem ecosystem) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
-        this.customer = customer;
+        //this.customer = customer;
         this.system = ecosystem;
     }
 

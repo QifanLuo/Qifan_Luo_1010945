@@ -22,7 +22,7 @@ import javax.swing.JPanel;
 public class DeliveryAddJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer; 
-    DeliveryMan deliveryMan;
+    //DeliveryMan deliveryMan;
     EcoSystem system;
 
     /**
@@ -30,10 +30,10 @@ public class DeliveryAddJPanel extends javax.swing.JPanel {
      */
 
 
-    DeliveryAddJPanel(JPanel userProcessContainer,  DeliveryMan deliveryMan,EcoSystem ecosystem) {
+    DeliveryAddJPanel(JPanel userProcessContainer,EcoSystem ecosystem) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
-        this.deliveryMan = deliveryMan;
+        //this.deliveryMan = deliveryMan;
         this.system = ecosystem;
     }
 
